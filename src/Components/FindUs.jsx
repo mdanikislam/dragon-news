@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 const FindUs = () => {
     return (
         <div>
