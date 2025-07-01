@@ -1,7 +1,14 @@
 import { GrView } from "react-icons/gr";
 import { FaStar } from "react-icons/fa6";
+import { useState } from "react";
 
 const NewsCard = ({ news }) => {
+    const [showFullText, setShowFullText] = useState(false);
+
+  const toggleReadMore = () => setShowFullText(prev => !prev);
+
+  const shortText = news.details?.slice(0, 200); 
+
   return (
     <div>
       <div className="flexflex-col mb-5 max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-50 dark:text-gray-800">
@@ -62,17 +69,28 @@ const NewsCard = ({ news }) => {
             className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500"
           />
           
-          <p className="text-lg text-gray-400">
-           {news.details}
+           <p className="text-lg text-gray-500">
+            {showFullText ? news.details : shortText}
+            {!showFullText && news.details.length > 200 && "..."}
           </p>
+
+          {news.details.length > 200 && (
+            <button
+              onClick={toggleReadMore}
+              className="text-orange-500 font-semibold mt-2"
+            >
+              {showFullText ? "Show Less" : "Read More"}
+            </button>
+          )}
         </div>
+        <hr className="text-gray-400" />
         <div className="flex flex-wrap justify-between">       
-            <div className="flex text-yellow-500 items-center">
+            <div className="flex text-orange-500 items-center">
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
-                <p className="text-black pl-3">{news?.rating?.number}</p>
+                <p className="text-gray-500 font-bold pl-3">{news?.rating?.number}</p>
             </div>
               <div>
                 <p className="flex gap-4 items-center"><GrView />{news.total_view}</p>
