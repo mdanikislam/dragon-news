@@ -74,7 +74,9 @@ const NewsCard = ({ news }) => {
                 <FaStar />
                 <p className="text-black pl-3">{news?.rating?.number}</p>
             </div>
-          
+              <div>
+                <p className="flex gap-4 items-center"><GrView />{news.total_view}</p>
+              </div>
         </div>
 
       </div>
