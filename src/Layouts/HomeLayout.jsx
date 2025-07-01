@@ -20,7 +20,7 @@ const HomeLayout = () => {
             <section className='w-11/12 mx-auto py-4'>
             <Navbar></Navbar>
             </section> 
-            <main className='w-11/12 mx-auto grid md:grid-cols-12 pt-5 gap-3'>
+            <main className='w-11/12 mx-auto grid md:grid-cols-12 pt-5 gap-6'>
             <aside className='left col-span-3'>
                 <LeftNavbar></LeftNavbar>
             </aside>

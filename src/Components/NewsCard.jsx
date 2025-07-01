@@ -11,7 +11,7 @@ const NewsCard = ({ news }) => {
 
   return (
     <div>
-      <div className="flexflex-col mb-5 max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-50 dark:text-gray-800">
+      <div className="flexflex-col  mb-5  p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-50 dark:text-gray-800">
         <div className="flex justify-between space-x-4">
           <div className="flex gap-4">
             <img
