@@ -66,7 +66,16 @@ const NewsCard = ({ news }) => {
            {news.details}
           </p>
         </div>
-
+        <div className="flex flex-wrap justify-between">       
+            <div className="flex text-yellow-500 items-center">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <p className="text-black pl-3">{news?.rating?.number}</p>
+            </div>
+          
+        </div>
 
       </div>
     </div>
