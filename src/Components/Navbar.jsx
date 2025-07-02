@@ -11,7 +11,7 @@ const Navbar = () => {
                 <Link>Career</Link>
             </div>
             <div className="flex gap-5">
-                <img src={userIcon} alt="" />
+               <Link to='/auth/register'> <img src={userIcon} alt="" /></Link>
                 <Link to='/auth/login' className="btn btn-neutral px-6">Login</Link>
             </div>
         </div>
