@@ -1,1 +1,1 @@
-## [Live Link](https://dragon-news-react-firebase.netlify.app/category/01)
+## [Live Link](https://dragon-news-react-firebase.netlify.app/)
