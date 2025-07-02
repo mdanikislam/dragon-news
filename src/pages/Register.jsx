@@ -1,4 +1,4 @@
-import Checkbox from "daisyui/components/checkbox";
+
 import { Link } from "react-router";
 
 const Register = () => {
@@ -7,7 +7,7 @@ const Register = () => {
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="bg-white shadow-lg rounded-lg p-10 w-full max-w-md">
           <h2 className="text-2xl font-semibold text-center mb-6">Register your account</h2>
-          <hr className="text-gray-200 py-3" />
+          <hr className="text-gray-200 py-4" />
           <form>
             <div className="mb-4">
                 <label className="block text-gray-700 mb-1" htmlFor="name">Your Name</label>
@@ -52,11 +52,11 @@ const Register = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-200"
+              className="w-full btn btn-neutral text-white font text-md py-2 rounded hover:bg-gray-800 transition duration-200"
             >
               Register
             </button>
-            <p className="text-center pt-3">Already Have An Account? <span  className="text-red-500"><Link to='/auth/login'>Login</Link></span></p>
+            <p className="text-center pt-3">Already Have An Account? <span  className="text-red-500 font-bold"><Link to='/auth/login'>Login</Link></span></p>
           </form>
         </div>
       </div>

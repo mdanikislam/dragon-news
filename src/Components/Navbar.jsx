@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="md:flex justify-between">
             <div></div>
             <div className="flex gap-5 text-gray-500 font-bold">
-                <Link>Home</Link>
+                <Link to='/'>Home</Link>
                 <Link>About</Link>
                 <Link>Career</Link>
             </div>
