@@ -13,7 +13,7 @@ const HomeLayout = () => {
                 <section className='bg-gray-200 p-2 rounded w-11/12 mx-auto flex items-center gap-2'>
                     <p className='bg-red-700 rounded text-white p-2'>Latest</p>
                     <Marquee  speed={80} pauseOnHover={true}> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam assumenda, inventore dolorem modi iusto accusamus.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam fugit tempore dignissimos aspernatur rem corporis atque perspiciatis asperiores, reiciendis cumque at aut dolore velit, temporibus id. Repellendus, exercitationem qui.</p>
                     </Marquee>
                 </section>
             </header>  
